@@ -1,0 +1,5494 @@
+{
+    "contexto": "Schema Estruturado do Lakehouse Eleitoral C-Level",
+    "total_tabelas": 40,
+    "tabelas": {
+        "bem_candidato_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ordem_bem",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_tipo_bem",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_bem",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_bem",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_bem",
+                "tipo": "DOUBLE"
+            },
+            {
+                "coluna": "data_atualizacao_bem",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_atualizacao_bem",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "bem_candidato_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ordem_bem",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_tipo_bem",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_bem",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_bem",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_bem",
+                "tipo": "DOUBLE"
+            },
+            {
+                "coluna": "data_atualizacao_bem",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_atualizacao_bem",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "consulta_cand_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_abrangencia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_urna_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_social_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "email_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_candidatura",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_candidatura",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_agremiacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "uf_nascimento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_nascimento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "titulo_eleitoral",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_grau_instrucao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_grau_instrucao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cor_raca",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cor_raca",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_ocupacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_ocupacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_turno",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "consulta_cand_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_abrangencia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_urna_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_social_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "email_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_candidatura",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_candidatura",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_agremiacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "uf_nascimento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_nascimento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "titulo_eleitoral",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_grau_instrucao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_grau_instrucao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cor_raca",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cor_raca",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_ocupacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_ocupacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_turno",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "consulta_cand_complementar_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_detalhe_situacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_detalhe_situacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_nacionalidade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_nacionalidade",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_municipio_nascimento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio_nascimento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "idade_data_posse",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "status_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_etnia_indigena",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_etnia_indigena",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_despesa_maxima",
+                "tipo": "DOUBLE"
+            },
+            {
+                "coluna": "status_reeleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "status_declaracao_bens",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_protocolo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_processo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_pleito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_pleito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_urna",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_urna",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "status_inserido_urna",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_destinacao_votos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_situacao_totalizacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_totalizacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "status_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "status_substituido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_substituido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ordem_suplencia",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "data_aceite_candidatura",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_julgamento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_julgamento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_julgamento_pleito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_julgamento_pleito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_julgamento_urna",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_julgamento_urna",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_cassacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_cassacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_cassacao_midia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_cassacao_midia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_diploma",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_diploma",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_genero_fefc",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_genero_fefc",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cor_raca_fefc",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cor_raca_fefc",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "consulta_cand_complementar_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_detalhe_situacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_detalhe_situacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_nacionalidade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_nacionalidade",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_municipio_nascimento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio_nascimento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "idade_data_posse",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "status_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_etnia_indigena",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_etnia_indigena",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_despesa_maxima",
+                "tipo": "DOUBLE"
+            },
+            {
+                "coluna": "status_reeleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "status_declaracao_bens",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_protocolo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_processo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_pleito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_pleito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_urna",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_urna",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "status_inserido_urna",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_destinacao_votos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_situacao_totalizacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_totalizacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "status_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "status_substituido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_substituido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ordem_suplencia",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "data_aceite_candidatura",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_julgamento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_julgamento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_julgamento_pleito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_julgamento_pleito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_julgamento_urna",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_julgamento_urna",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_cassacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_cassacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_cassacao_midia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_cassacao_midia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_diploma",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_diploma",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_genero_fefc",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_genero_fefc",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cor_raca_fefc",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cor_raca_fefc",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "consulta_coligacao_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_agremiacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_legenda",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_destinacao_votos",
+                "tipo": "BIGINT"
+            }
+        ],
+        "consulta_coligacao_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_agremiacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_legenda",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_destinacao_votos",
+                "tipo": "BIGINT"
+            }
+        ],
+        "consulta_vagas_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_posse",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "quantidade_vagas",
+                "tipo": "BIGINT"
+            }
+        ],
+        "consulta_vagas_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_posse",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "quantidade_vagas",
+                "tipo": "BIGINT"
+            }
+        ],
+        "despesas_contratadas_candidatos_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cnpj_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_vice_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cnae_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cnae_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_cnpj_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_fornecedor_rfb",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_esfera_partidaria_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_esfera_partidaria_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_documento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_documento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_origem_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_origem_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_despesa_contratada",
+                "tipo": "DOUBLE"
+            }
+        ],
+        "despesas_contratadas_candidatos_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cnpj_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_vice_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cnae_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cnae_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_cnpj_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_fornecedor_rfb",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_esfera_partidaria_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_esfera_partidaria_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_documento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_documento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_origem_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_origem_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_despesa_contratada",
+                "tipo": "DOUBLE"
+            }
+        ],
+        "despesas_contratadas_orgaos_partidarios_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cd_esfera_partidaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ds_esfera_partidaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cnpj_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cnae_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cnae_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_cnpj_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_fornecedor_rfb",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_esfera_partidaria_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_esfera_partidaria_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido_fornecedor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_documento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_documento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_origem_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_origem_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_despesa_contratada",
+                "tipo": "DOUBLE"
+            }
+        ],
+        "despesas_pagas_candidatos_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_documento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_documento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_fonte_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_fonte_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_origem_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_origem_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_natureza_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_natureza_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_especie_recurso",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_especie_recurso",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_parcelamento_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_pagamento_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_pagamento_despesa",
+                "tipo": "DOUBLE"
+            }
+        ],
+        "despesas_pagas_candidatos_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_documento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_documento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_fonte_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_fonte_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_origem_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_origem_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_natureza_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_natureza_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_especie_recurso",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_especie_recurso",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_parcelamento_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_pagamento_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_pagamento_despesa",
+                "tipo": "DOUBLE"
+            }
+        ],
+        "despesas_pagas_orgaos_partidarios_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_documento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_documento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_fonte_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_fonte_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_origem_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_origem_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_natureza_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_natureza_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_especie_recurso",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_especie_recurso",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_parcelamento_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_pagamento_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_despesa",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_pagamento_despesa",
+                "tipo": "DOUBLE"
+            }
+        ],
+        "eleitorado_local_votacao_2024": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_secao_agregada",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_secao_agregada",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_secao_principal",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_local",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_local",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "endereco",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_bairro",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cep",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "telefone_local",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "latitude",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "longitude",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_localidade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_localidade",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_situacao_secao_acessibilidade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_secao_acessibilidade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "quantidade_eleitores_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "quantidade_eleitores_federal",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_estadual",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_municipal",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "numero_local_votacao_original",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_local_votacao_original",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "endereco_local_votacao_original",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "eleitorado_local_votacao_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_secao_agregada",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_secao_agregada",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_secao_principal",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_local",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_local",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "endereco",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_bairro",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cep",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "telefone_local",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "latitude",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "longitude",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_localidade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_localidade",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_situacao_secao_acessibilidade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_secao_acessibilidade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "quantidade_eleitores_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "quantidade_eleitores_federal",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_estadual",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_municipal",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "numero_local_votacao_original",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_local_votacao_original",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "endereco_local_votacao_original",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "historico_candidatura_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao_atual",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sq_candidato_atual",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sg_uf_atual",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tp_abrangencia_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_urna_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_candidatura",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_candidatura",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_julgamento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_julgamento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_turno",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "perfil_eleitorado_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_faixa_etaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_faixa_etaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_grau_escolaridade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_grau_escolaridade",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_raca_cor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_raca_cor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_identidade_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_identidade_genero",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_interprete_libras",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_interprete_libras",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "quantidade_eleitores",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_biometria",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_deficiencia",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_nome_social",
+                "tipo": "BIGINT"
+            }
+        ],
+        "perfil_eleitorado_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_faixa_etaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_faixa_etaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_grau_escolaridade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_grau_escolaridade",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_raca_cor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_raca_cor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_identidade_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_identidade_genero",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_interprete_libras",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_interprete_libras",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "quantidade_eleitores",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_biometria",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_deficiencia",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_nome_social",
+                "tipo": "BIGINT"
+            }
+        ],
+        "perfil_eleitor_deficiencia_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_eleitor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_biometrica",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_biometrica",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_faixa_etaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_faixa_etaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_grau_escolaridade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_grau_escolaridade",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_tipo_deficiencia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_deficiencia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "status_biometria_eleitor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_raca_cor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_raca_cor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_identidade_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_identidade_genero",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_interprete_libras",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_interprete_libras",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "perfil_eleitor_deficiencia_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_eleitor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cd_mun_situ_biometrica",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ds_mun_situ_biometrica",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_faixa_etaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_faixa_etaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_grau_escolaridade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_grau_escolaridade",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_tipo_deficiencia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_tipo_deficiencia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "status_biometria_eleitor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_raca_cor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_raca_cor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_identidade_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_identidade_genero",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_interprete_libras",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_interprete_libras",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "perfil_eleitor_secao_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_faixa_etaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_faixa_etaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_grau_escolaridade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_grau_escolaridade",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_raca_cor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_raca_cor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_identidade_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_identidade_genero",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_interprete_libras",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_interprete_libras",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_obrigatoriedade_voto",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "quantidade_eleitores_perfil",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_biometria",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_deficiencia",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_nome_social",
+                "tipo": "BIGINT"
+            }
+        ],
+        "perfil_eleitor_secao_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_estado_civil",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_faixa_etaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_faixa_etaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_grau_escolaridade",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_grau_escolaridade",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_raca_cor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_raca_cor",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_identidade_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_identidade_genero",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_quilombola",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_interprete_libras",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_interprete_libras",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "quantidade_eleitores",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_biometria",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_deficiencia",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "quantidade_eleitores_nome_social",
+                "tipo": "BIGINT"
+            }
+        ],
+        "receitas_candidatos_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cnpj_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_vice_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_fonte_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_fonte_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_origem_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_origem_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_natureza_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_natureza_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_especie_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_especie_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cnae_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cnae_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_cnpj_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_doador_rfb",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_esfera_partidaria_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_esfera_partidaria_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_recibo_doacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_documento_doacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_receita",
+                "tipo": "DOUBLE"
+            },
+            {
+                "coluna": "natureza_recurso_estimavel",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cor_raca",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "receitas_candidatos_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cnpj_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_vice_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_fonte_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_fonte_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_origem_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_origem_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_natureza_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_natureza_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_especie_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_especie_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cnae_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cnae_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_cnpj_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_doador_rfb",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_esfera_partidaria_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_esfera_partidaria_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_recibo_doacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_documento_doacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_receita",
+                "tipo": "DOUBLE"
+            },
+            {
+                "coluna": "natureza_recurso_estimavel",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_genero",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cor_raca",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "receitas_candidatos_doador_originario_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_cnpj_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_doador_originario_rfb",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cnae_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cnae_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_receita",
+                "tipo": "DOUBLE"
+            }
+        ],
+        "receitas_candidatos_doador_originario_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_cnpj_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_doador_originario_rfb",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cnae_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cnae_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_receita",
+                "tipo": "DOUBLE"
+            }
+        ],
+        "receitas_orgaos_partidarios_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cd_esfera_partidaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ds_esfera_partidaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cnpj_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_fonte_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_fonte_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_origem_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_origem_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_natureza_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_natureza_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_especie_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_especie_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cnae_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cnae_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_cnpj_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_doador_rfb",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_esfera_partidaria_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_esfera_partidaria_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido_doador",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_recibo_doacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_documento_doacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_receita",
+                "tipo": "DOUBLE"
+            }
+        ],
+        "receitas_orgaos_partidarios_doador_originario_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_prestacao_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_prestador_contas",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "cpf_cnpj_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_doador_originario_rfb",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cnae_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cnae_doador_originario",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_receita",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "valor_receita",
+                "tipo": "DOUBLE"
+            }
+        ],
+        "rede_social_candidato_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ordem_rede_social",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "url_rede_social",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "rede_social_candidato_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ordem_rede_social",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "url_rede_social",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "rj_bairros_cd2022": [
+            {
+                "coluna": "codigo_regiao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_regiao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_distrito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_distrito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_subdistrito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_subdistrito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_bairro",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_bairro",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_regiao_intermediaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_regiao_intermediaria",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_regiao_imediata",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_regiao_imediata",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_concentracao_urbana",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_concentracao_urbana",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "area_km2",
+                "tipo": "DOUBLE"
+            },
+            {
+                "coluna": "total_pessoas",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "total_domicilios",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "total_domicilios_particulares",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "total_domicilios_coletivos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "media_moradores_domicilios_particulares_ocupados",
+                "tipo": "DOUBLE"
+            },
+            {
+                "coluna": "percentual_domicilios_particulares_ocupados_imputados",
+                "tipo": "DOUBLE"
+            },
+            {
+                "coluna": "total_domicilios_particulares_ocupados",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "geometry_wkt",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "votacao_candidato_munzona_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_abrangencia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_urna_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_social_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_candidatura",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_candidatura",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_detalhe_situacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_detalhe_situacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_julgamento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_julgamento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_cassacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_cassacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_diploma",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_diploma",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_agremiacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "voto_em_transito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "votos_nominais",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "tipo_destinacao_votos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_nominais_validos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_situacao_turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_turno",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "votacao_candidato_munzona_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_abrangencia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_urna_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_social_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_candidatura",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_candidatura",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_detalhe_situacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_detalhe_situacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_julgamento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_julgamento",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_cassacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_cassacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_situacao_diploma",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_diploma",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_agremiacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "voto_em_transito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "votos_nominais",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "tipo_destinacao_votos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_nominais_validos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "codigo_situacao_turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_situacao_turno",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "votacao_partido_munzona_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_abrangencia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_agremiacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "voto_em_transito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "votos_legenda_validos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_nominais_convertidos_legenda",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "total_votos_legenda_validos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_nominais_validos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_legenda_anulados_subjudice",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_nominais_anulados_subjudice",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_legenda_anulados",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_nominais_anulados",
+                "tipo": "BIGINT"
+            }
+        ],
+        "votacao_partido_munzona_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_abrangencia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_agremiacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_partido",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_federacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "composicao_coligacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "voto_em_transito",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "votos_legenda_validos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_nominais_convertidos_legenda",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "total_votos_legenda_validos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_nominais_validos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_legenda_anulados_subjudice",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_nominais_anulados_subjudice",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_legenda_anulados",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "votos_nominais_anulados",
+                "tipo": "BIGINT"
+            }
+        ],
+        "votacao_secao_2024_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_abrangencia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nr_votavel",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nm_votavel",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "qt_votos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "numero_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ds_local_votacao_endereco",
+                "tipo": "VARCHAR"
+            }
+        ],
+        "votacao_secao_2026_rj": [
+            {
+                "coluna": "data_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "hora_geracao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ano_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_tipo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "turno",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "data_eleicao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "tipo_abrangencia",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_uf",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "sigla_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_ue",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_municipio",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_zona",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "numero_secao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "codigo_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "descricao_cargo",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nr_votavel",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nm_votavel",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "qt_votos",
+                "tipo": "BIGINT"
+            },
+            {
+                "coluna": "numero_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "id_candidato",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "nome_local_votacao",
+                "tipo": "VARCHAR"
+            },
+            {
+                "coluna": "ds_local_votacao_endereco",
+                "tipo": "VARCHAR"
+            }
+        ]
+    }
+}
