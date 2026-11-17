@@ -3,6 +3,8 @@
   <h3>Pipeline de engenharia de dados (TSE + IBGE) e geração de relatórios executivos em PDF com SQL analítico e fluxo Human-in-the-Loop.</h3>
   <p>De dados públicos brutos e heterogêneos a diagnósticos eleitorais e financeiros auditáveis.<br/><b>Python · DuckDB · Apache Parquet · GeoPandas · Schema-Grounded LLM (HITL).</b></p>
 
+  <img src="assets\kpis_eleitorais.png" />
+
   <p>
     <a href="#arquitetura-do-fluxo">Arquitetura</a> ·
     <a href="#1-pipeline-de-etl-e-lakehouse">ETL & Lakehouse</a> ·
