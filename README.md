@@ -1,125 +1,169 @@
-# Análise Eleitoral — ETL, Lakehouse e dossiês analíticos
+<div align="center">
+  <h1>📊 Inteligência Eleitoral: ETL, Lakehouse Local e Dossiês Analíticos</h1>
+  <h3>Pipeline de engenharia de dados (TSE + IBGE) e geração de relatórios executivos em PDF com SQL analítico e fluxo Human-in-the-Loop.</h3>
+  <p>De dados públicos brutos e heterogêneos a diagnósticos eleitorais e financeiros auditáveis.<br/><b>Python · DuckDB · Apache Parquet · GeoPandas · Schema-Grounded LLM (HITL).</b></p>
 
-Projeto de análise de dados eleitorais que transforma arquivos públicos do TSE e dados geográficos do IBGE em tabelas Parquet consultáveis e relatórios PDF. O fluxo combina um ETL executável em Python com uma etapa analítica iterativa, na qual consultas SQL e narrativas são preparadas com apoio de um modelo de linguagem e revisadas por uma pessoa.
+  <p>
+    <a href="#arquitetura-do-fluxo">Arquitetura</a> ·
+    <a href="#1-pipeline-de-etl-e-lakehouse">ETL & Lakehouse</a> ·
+    <a href="#2-fluxo-analitico-human-in-the-loop">Fluxo Analítico (HITL)</a> ·
+    <a href="#trade-offs-de-engenharia">Trade-offs</a> ·
+    <a href="#organizacao-do-repositorio">Estrutura</a>
+  </p>
 
-O projeto demonstra trabalho com ingestão e transformação de dados, SQL analítico, DuckDB, visualização e comunicação de resultados. A interação com a LLM é manual: não há integração com API nem uma automação que execute as etapas de geração e revisão dos prompts de forma automática, pois devido aos riscos de alucinação e mesmo utilizando formas de mitigar os riscos, é necessário uma revisão humana.
+  <p>
+    <img src="https://img.shields.io/badge/Python-3.10%2B-38bdf8?&logo=python&logoColor=white" alt="Python" />
+    <img src="https://img.shields.io/badge/Engine-DuckDB-FFF000?&logo=duckdb&logoColor=black" alt="DuckDB" />
+    <img src="https://img.shields.io/badge/Storage-Parquet_%28Snappy%29-10b981?" alt="Parquet" />
+    <img src="https://img.shields.io/badge/AI_Workflow-Human--in--the--Loop-ec4899?" alt="HITL" />
+  </p>
 
-## Visão geral do fluxo
+  <!-- Recomendação: adicione aqui um print lado a lado das páginas do Dossie_Estrategico_*.pdf -->
+  <!-- <img src="images/preview_dossie.png" alt="Exemplo de Dossiê Analítico Gerado" width="90%"/> -->
+</div>
+
+> **Dados públicos não vêm prontos para decisão.** Arquivos do TSE e malhas/dados do IBGE possuem múltiplas extensões, códigos crípticos e tipagens inconsistentes. Este projeto resolve o ciclo completo: padroniza e armazena os dados em um Lakehouse local consultável via SQL e estrutura dossiês executivos em PDF combinando métricas financeiras/eleitorais com revisão humana assistida por IA.
+
+---
+
+## 🏗️ Arquitetura do Fluxo
+
+O sistema desacopla a **engenharia de preparação dos dados** da **camada de análise e visualização**. O ETL constrói e atualiza o Lakehouse; os scripts analíticos consultam os arquivos Parquet já saneados para compilar os relatórios.
 
 ```text
-Arquivos brutos em data/
-        │
+Arquivos brutos em data/ (TSE: 2024, 2026 + IBGE)
+        │  (.csv, .txt, .xls, .xlsx, .gpkg)
         ▼
-run_pipeline.py
-Leitura, renomeação de colunas e sanitização
-        │
+run_pipeline.py  ──► src/etl/ingestion.py + sanitizer.py
+        │            (Varredura recursiva, tradução de códigos e tipagem)
         ▼
 lakehouse_eleitoral/
-Arquivos Parquet e banco DuckDB
+        ├── *.parquet (Armazenamento colunar com compressão Snappy)
+        └── analytics.duckdb (Catálogo analítico local)
         │
         ▼
 extraction-schema.py
         │
         ▼
-schema_lakehouse.json ───────────────┐
+schema_lakehouse.json ───────────────┐  (Catálogo de tabelas, colunas e tipos)
                                      │
-gemini-instructions.md + pergunta  ──┤
+gemini-instructions.md + pergunta  ──┤  (Regras de negócio e estilo analítico)
                                      ▼
-                 LLM gera/adapta código Python e SQL
-                                     │
-                                     ▼
-                 Execução do código → PDF analítico
+                 LLM gera/adapta queries SQL e código Python
                                      │
                                      ▼
-              Revisão do PDF com apoio de uma LLM
+                 Execução local ──► 1ª versão do PDF (Tabelas + Gráficos)
                                      │
                                      ▼
-              Código revisado → dossiê final em PDF
+                 Revisão humana + apoio da LLM na narrativa
+                                     │
+                                     ▼
+                 Código revisado ──► Dossiê Final em PDF (Dossie_Estrategico_*.pdf)
+
 ```
 
-As etapas de ETL e de produção dos relatórios são independentes. O ETL prepara ou atualiza os dados; a geração de um relatório consulta o Lakehouse já existente. As etapas com LLM dependem de envio manual de arquivos, instruções e resultados.
+---
 
-## 1. Preparação dos dados
+## 1. Pipeline de ETL e Lakehouse
 
-### Entrada
+### Fontes e Ingestão Recursiva
 
-O diretório `data/` contém arquivos organizados por ano e assunto. A estrutura presente inclui pastas para 2024 e 2026, com categorias como candidatos, eleitorado, receitas e votação, além de dados do IBGE. O ETL percorre subpastas recursivamente e reconhece `.csv`, `.txt`, `.xls`, `.xlsx` e `.gpkg`.
-
-### Execução
-
-Na raiz do projeto:
+O diretório `data/` organiza os insumos brutos por ano (como `2024` e `2026`) e domínio (candidatos, eleitorado, receitas, votação e bases do IBGE). Ao executar:
 
 ```bash
 python run_pipeline.py
+
 ```
 
-O script delega o processamento a `src/etl/ingestion.py`, que:
+O orquestrador (`src/etl/ingestion.py`) percorre recursivamente as subpastas e aplica leitores específicos conforme o formato de origem:
 
-1. localiza arquivos nas extensões suportadas;
-2. lê os dados — CSV/TXT com DuckDB, planilhas com pandas e GeoPackage com GeoPandas;
-3. aplica o mapeamento de nomes de colunas definido em `src/etl/sanitizer.py`, incluindo traduções de códigos do TSE/IBGE quando previstas no mapeamento;
-4. trata valores com regras baseadas nos nomes das colunas, como identificadores, textos, campos monetários e contagens;
-5. grava cada tabela como Parquet com compressão Snappy em `lakehouse_eleitoral/` e registra uma tabela correspondente em `lakehouse_eleitoral/analytics.duckdb`.
+* **`.csv` e `.txt`:** Leitura de alta performance diretamente via **DuckDB**.
+* **`.xls` e `.xlsx`:** Processamento tabular via **Pandas**.
+* **`.gpkg` (GeoPackage):** Leitura de dados geográficos via **GeoPandas**.
 
-Os nomes das tabelas são derivados dos nomes dos arquivos. O processo não depende de um servidor de banco de dados separado: DuckDB é executado localmente.
+### Sanitização Determinística e Camada Parquet
 
-### Extração do schema
+Antes da gravação, `src/etl/sanitizer.py` aplica regras de higienização baseadas na semântica das colunas:
 
-Depois de gerar ou atualizar os Parquet:
+* **Tradução de Metadados:** Conversão de siglas e códigos originais do TSE/IBGE para nomes descritivos legíveis.
+* **Tipagem Estrita:** Normalização de identificadores, limpeza de strings, conversão de campos monetários e padronização de contagens.
+* **Persistência Colunar:** Cada tabela é gravada em formato **Parquet (compressão Snappy)** dentro de `lakehouse_eleitoral/` e registrada no banco local `lakehouse_eleitoral/analytics.duckdb`, dispensando servidores externos.
+
+### Extração de Catálogo para IA (`Schema Grounding`)
 
 ```bash
 python extraction-schema.py
+
 ```
 
-Esse script inspeciona os arquivos Parquet diretamente e grava `schema_lakehouse.json`, com nomes de tabelas, colunas e tipos. O arquivo serve como referência de estrutura para elaborar consultas e fornecer contexto a uma LLM.
+Este script inspeciona fisicamente os arquivos Parquet gerados e exporta o `schema_lakehouse.json` contendo todas as tabelas, colunas e tipos de dados reais. Esse catálogo serve tanto como documentação técnica quanto como **âncora de contexto** para evitar que a LLM invente nomes de colunas ao escrever SQL.
 
-## 2. Análise e geração dos dossiês
+---
 
-O fluxo usado para responder a uma pergunta analítica é interativo:
+## 2. Fluxo Analítico (*Human-in-the-Loop*)
 
-1. formular a pergunta de negócio ou de pesquisa;
-2. fornecer à LLM as instruções de `gemini-instructions.md`, o schema atual e o código-base do relatório;
-3. revisar a consulta SQL e o código gerados, ajustando-os quando necessário;
-4. executar o código na raiz do projeto para consultar o Lakehouse e gerar um PDF com tabelas, indicadores e gráficos;
-5. revisar o primeiro PDF e fornecer esse material à LLM para apoiar a elaboração de interpretações e conclusões;
-6. revisar as novas análises, o SQL e o código resultante;
-7. executar a versão final do código e revisar o dossiê antes de entregá-lo.
+A geração dos dossiês não utiliza chamadas automáticas de API nem delega decisões cegas à IA. Por conta dos riscos de alucinação em análises quantitativas, o projeto adota um **fluxo iterativo supervisionado**:
 
-No repositório atual, `PRODUTO.py` é o exemplo de gerador analítico mais abrangente: reúne busca de informações do candidato, consultas, indicadores financeiros e eleitorais, tabelas e diferentes visualizações. Seu bloco `main()` contém uma configuração de exemplo específica; para outra análise, revise o candidato, o município, o ano, as perguntas, as queries, os títulos, os tipos de gráfico e as conclusões antes de executar.
+1. **Formulação da Pergunta:** Definição do recorte analítico (candidato, município, ano e objetivo da análise).
+2. **Contexto Controlado:** Envio manual do `schema_lakehouse.json`, das diretrizes em `gemini-instructions.md` e do script-base para a LLM propor ou adaptar as consultas SQL.
+3. **Auditoria de Código e SQL:** Revisão humana das queries geradas antes da execução no DuckDB.
+4. **Prototipação Visual:** Execução do script para gerar a primeira versão do PDF com indicadores financeiros/eleitorais, tabelas e gráficos.
+5. **Refinamento Narrativo:** Submissão do primeiro PDF para apoiar a redação das interpretações, seguida de nova revisão humana nos textos e no código antes da emissão do dossiê final.
 
-O PDF final não é produzido por uma chamada automática à LLM. O texto interpretativo depende da análise feita a partir do primeiro PDF, de sua incorporação ao código e da revisão humana.
+### Executando o Relatório de Exemplo
 
-### Execução do exemplo incluído
+O arquivo `PRODUTO.py` reúne um caso completo de análise (busca cadastral do candidato, cruzamento de receitas/votação, indicadores, tabelas e visualizações). Para executá-lo com os parâmetros configurados em seu bloco `main()`:
 
 ```bash
 python PRODUTO.py
+
 ```
 
-Esse comando executa os valores definidos no `main()` do arquivo, que podem não corresponder à pergunta ou ao relatório desejado. A execução depende dos arquivos Parquet, do schema e das bibliotecas Python necessárias.
+*(Para analisar outro candidato, município ou pleito, basta ajustar os parâmetros, queries e títulos diretamente no `main()` antes da execução).*
 
-## Organização do repositório
+---
 
-| Caminho | Função |
-|---|---|
-| `data/` | Arquivos brutos usados como entrada do ETL. |
-| `src/etl/ingestion.py` | Varredura, leitura e gravação do Lakehouse. |
-| `src/etl/sanitizer.py` | Tradução de colunas e regras de sanitização. |
-| `run_pipeline.py` | Ponto de entrada para executar a ingestão. |
-| `lakehouse_eleitoral/` | Arquivos Parquet e banco DuckDB gerados ou usados pelo projeto. |
-| `extraction-schema.py` | Gera o catálogo de tabelas e colunas dos Parquet. |
-| `schema_lakehouse.json` | Schema exportado, usado como contexto para consultas e para a LLM. |
-| `src/database/` | Conexão DuckDB, registro de views Parquet, acesso ao schema e execução de consultas. |
-| `PRODUTO.py` | Exemplo de gerador de dossiê analítico com consultas, indicadores e gráficos. |
-| `PROPAGANDA.py` | Outros geradores/versões de relatórios presentes no projeto; não são chamados pelo ETL. |
-| `gemini-instructions.md` | Instruções de contexto e estilo analítico para uso manual com uma LLM. |
-| `Dossie_Estrategico_*.pdf` | Relatórios existentes no diretório, apresentados como exemplos de saída; não são recriados pelo ETL. |
+## ⚖️ Trade-offs de Engenharia e Decisões de Escopo
 
-## Tecnologias e competências demonstradas
+| Decisão Arquitetural | Escolha Adotada | Justificativa e Trade-off Assumido |
+| --- | --- | --- |
+| **Motor Analítico e Storage** | **DuckDB + Parquet (Snappy)** em disco local. | Elimina custos e complexidade de manter um servidor PostgreSQL/Cloud ativo, mantendo consultas SQL analíticas rápidas sobre milhões de linhas. |
+| **Orquestração com LLM** | **Fluxo Manual (*Human-in-the-Loop*)** sem integração via API. | **Trade-off consciente:** abre mão da automação ponta a ponta para garantir zero custo de API, aproveitamento máximo de contexto e bloqueio de alucinações via revisão humana obrigatória. |
+| **Catálogo de Schema** | Geração independente via `extraction-schema.py`. | Garante que o `schema_lakehouse.json` reflita exatamente o estado físico dos arquivos Parquet, desacoplando a ingestão da etapa de análise. |
 
-- **Python:** organização do processamento e geração de documentos.
-- **Parquet:** armazenamento colunar dos dados processados.
-- **LLMs com supervisão humana:** apoio à elaboração de consultas e à interpretação de resultados por meio de um fluxo manual.
+---
 
-## Escopo
+## 📁 Organização do Repositório
 
-Este projeto é um fluxo local de preparação e análise de dados eleitorais com geração de relatórios executivos. A etapa de ingestão é implementada em código; a formulação e revisão de perguntas, análises narrativas e recomendações com LLM ocorrem manualmente. Os resultados dependem das fontes disponíveis, das consultas selecionadas e da revisão aplicada em cada execução.
+| Caminho | Responsabilidade |
+| --- | --- |
+| `data/` | Arquivos brutos de entrada (bases do TSE 2024/2026 e IBGE). |
+| `run_pipeline.py` | Ponto de entrada CLI para execução completa do ETL. |
+| `src/etl/ingestion.py` | Varredura recursiva, leitura multi-formato e escrita em Parquet/DuckDB. |
+| `src/etl/sanitizer.py` | Dicionário de tradução de colunas (TSE/IBGE) e regras de sanitização. |
+| `lakehouse_eleitoral/` | Camada de dados processados (`.parquet`) e catálogo `analytics.duckdb`. |
+| `extraction-schema.py` | Extrator dinâmico de metadados dos arquivos Parquet. |
+| `schema_lakehouse.json` | Schema físico exportado para consulta e contexto da LLM. |
+| `src/database/` | Camada de conexão DuckDB, registro de views Parquet e execução de queries. |
+| `PRODUTO.py` | Gerador principal de dossiê analítico (consultas, indicadores, gráficos e PDF). |
+| `PROPAGANDA.py` | Variação de gerador analítico voltado a análises específicas de campanha. |
+| `gemini-instructions.md` | Prompt estruturado com regras de estilo analítico e formatação para a LLM. |
+| `Dossie_Estrategico_*.pdf` | Exemplos reais de relatórios executivos gerados pelo projeto. |
+
+---
+
+## 🛠️ Competências e Tecnologias Aplicadas
+
+* **Engenharia de Dados & ETL:** Python, Pandas, GeoPandas, varredura recursiva de arquivos, higienização de dados e normalização de esquemas.
+* **Arquitetura Lakehouse & SQL:** Apache Parquet (compressão Snappy), DuckDB e SQL analítico para cruzamento de bases eleitorais e demográficas.
+* **Data Visualization & Reporting:** Geração programática de relatórios executivos em PDF combinando tabelas, indicadores financeiros/eleitorais e gráficos.
+* **Governança de IA Generativa:** Engenharia de prompt (`gemini-instructions.md`), *Schema Grounding* (`schema_lakehouse.json`) e validação *Human-in-the-Loop*.
+
+---
+
+## 🤝 Contato
+
+Projeto desenvolvido para demonstrar habilidades práticas em **Análise de Dados, Engenharia de Analytics e Arquitetura de Decisão, uso e interação da IA durante o processo de trabalho**.
+
+* ![LinkedIn](https://img.shields.io/badge/Linkedin-@dirceu--silvestre-0A66C2?style=flat-square&labelColor=075A9B)
+* [![Outlook](https://shields.io/badge/Email-dirceu__silvestre-0A66C2?style=flat-square&labelColor=075A9B)](mailto:dirceu_silvestre@hotmail.com)
