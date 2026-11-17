@@ -1,0 +1,11 @@
+duckdb
+geopandas
+matplotlib
+numpy
+openpyxl
+pandas
+pyarrow
+pyogrio
+reportlab
+shapely
+xlrd
